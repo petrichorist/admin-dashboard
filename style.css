@@ -95,7 +95,8 @@ input {
   background-color: #e2e8f0;
   border-radius: 25px;
   border: none;
-  padding: 8px 280px;
+  padding: 8px;
+  width: 750px;
 }
 
 .secondRow {
@@ -126,12 +127,6 @@ h2 {
   margin: 0;
 }
 
-main {
-  grid-area: main;
-  background-color: #e2e8f0;
-  box-shadow: inset 0 8px 10px -10px #000000;
-}
-
 .logo {
   padding-bottom: 25px;
 }
@@ -146,4 +141,64 @@ li a {
 .logo svg {
   width: 3.5em;
   padding: 0 10px;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  background-color: #e2e8f0;
+  box-shadow: inset 0 8px 10px -10px #000000;
+}
+
+.projects {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 380px);
+  grid-template-rows: repeat(3, 200px);
+  gap: 30px;
+}
+
+.card {
+  background-color: #fff;
+  height: 160px;
+  width: 340px;
+  padding: 25px;
+  box-shadow: inset 12px 0 4px -4px #ffb13b, #3c40434d 0px 1px 2px 0px,
+    #3c404326 0px 1px 3px 1px;
+  border-radius: 8px;
+  display: grid;
+}
+
+.announcements {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding-left: 0;
+  padding: 25px;
+  height: 300px;
+  width: 300px;
+  border-radius: 8px;
+}
+
+hr {
+  color: #0000003b;
+  width: 260px;
+  height: 1px;
+  margin-top: 0;
+}
+
+.tags {
+  margin-top: 32px;
+  margin-left: 42px;
+}
+
+h3 {
+  margin: 0;
+}
+
+p {
+  margin-top: 5px;
 }
