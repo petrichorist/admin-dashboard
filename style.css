@@ -25,11 +25,6 @@ img {
   border-radius: 25px;
 }
 
-.pfp img {
-  width: 70px;
-  border-radius: 45px;
-}
-
 li {
   list-style: none;
 }
@@ -75,6 +70,57 @@ header {
   font-weight: 900;
 }
 
+main {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  background-color: #e2e8f0;
+  box-shadow: inset 0 8px 10px -10px #000000;
+}
+
+input {
+  background-color: #e2e8f0;
+  border-radius: 25px;
+  border: none;
+  padding: 8px;
+  width: 750px;
+}
+
+button {
+  background-color: #3c7db3;
+  color: #fff;
+  font-weight: 900;
+  padding: 12px 30px;
+  border-radius: 25px;
+  border: none;
+  margin: 8px;
+}
+
+p {
+  margin-top: 5px;
+}
+
+h5,
+h2 {
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+}
+
+hr {
+  color: #0000003b;
+  width: 260px;
+  height: 1px;
+  margin-top: 0;
+}
+
+.pfp img {
+  width: 70px;
+  border-radius: 45px;
+}
+
 .firstRow,
 .secondRow {
   display: flex;
@@ -91,14 +137,6 @@ header {
   display: flex;
 }
 
-input {
-  background-color: #e2e8f0;
-  border-radius: 25px;
-  border: none;
-  padding: 8px;
-  width: 750px;
-}
-
 .secondRow {
   padding: 20px 50px 0;
 }
@@ -110,21 +148,6 @@ input {
 
 .pfp {
   padding-right: 20px;
-}
-
-button {
-  background-color: #3c7db3;
-  color: #fff;
-  font-weight: 900;
-  padding: 12px 30px;
-  border-radius: 25px;
-  border: none;
-  margin: 8px;
-}
-
-h5,
-h2 {
-  margin: 0;
 }
 
 .logo {
@@ -143,14 +166,6 @@ li a {
   padding: 0 10px;
 }
 
-main {
-  display: flex;
-  flex-direction: row;
-  gap: 30px;
-  background-color: #e2e8f0;
-  box-shadow: inset 0 8px 10px -10px #000000;
-}
-
 .projects {
   width: 100%;
   height: 100vh;
@@ -162,17 +177,19 @@ main {
 
 .card {
   background-color: #fff;
+  box-shadow: inset 12px 0 4px -4px #ffb13b, #3c40434d 0px 1px 2px 0px,
+    #3c404326 0px 1px 3px 1px;
   height: 160px;
   width: 340px;
   padding: 25px;
-  box-shadow: inset 12px 0 4px -4px #ffb13b, #3c40434d 0px 1px 2px 0px,
-    #3c404326 0px 1px 3px 1px;
   border-radius: 8px;
   display: grid;
 }
 
-.announcements {
+.announcements,
+.trending {
   background-color: #fff;
+  box-shadow: #3c40434d 0px 1px 2px 0px, #3c404326 0px 1px 3px 1px;
   display: flex;
   flex-direction: column;
   text-align: left;
@@ -183,22 +200,32 @@ main {
   border-radius: 8px;
 }
 
-hr {
-  color: #0000003b;
-  width: 260px;
-  height: 1px;
-  margin-top: 0;
-}
-
 .tags {
   margin-top: 32px;
   margin-left: 42px;
 }
 
-h3 {
-  margin: 0;
+.dull-text {
+  color: #000000a8;
 }
 
-p {
-  margin-top: 5px;
+.trending {
+  height: 200px;
+  margin-top: 16px;
+  padding: 24px;
+  gap: 18px;
+}
+
+.trending-profiles {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.trending-profiles p {
+  margin: 4px;
+}
+
+#no_left_margin-tag {
+  margin-left: 0;
 }
