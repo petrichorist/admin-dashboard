@@ -1,1 +1,2 @@
-# admin-dashboard
+# INFO
+A project management dashboard.
